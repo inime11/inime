@@ -9,5 +9,6 @@
 <body>
 	<h1>메인페이지</h1>
 	<h2><a href="/settingPage.do">세팅</a></h2>
+	냠냠
 </body>
 </html>
