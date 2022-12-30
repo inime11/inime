@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>경로 설정</title>
+<title>워크스페이스 설정</title>
 </head>
 <body>
 <%@ include file="/WEB-INF/views/header/header.jsp" %>
@@ -12,8 +12,8 @@
 	<div class="content-wrap">
 		<h1 class="font3">경로 설정</h1>
 		<pre class="font4 black">
--binary zip 압축해제해서 respositroy 폴더 생성
--conf폴더의 setting.xml열어서 55번째줄 <localRepository>C:\spring\apache-maven-3.8.5\repository</localRepository> 추가
+-workspace 만들고 sts-3.9.13 Release 폴더에서 sts.exe 실행
+-경로는 워크스페이스 window-preferences에서 java-installed JREs에 jre버전 맞는지 확인.
 		</pre>
 	</div>
 </body>

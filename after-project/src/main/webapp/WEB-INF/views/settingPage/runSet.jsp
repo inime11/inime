@@ -4,16 +4,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>경로 설정</title>
+<title>실행 설정</title>
 </head>
 <body>
 <%@ include file="/WEB-INF/views/header/header.jsp" %>
 <%@ include file="/WEB-INF/views/header/leftMenu.jsp" %>
 	<div class="content-wrap">
-		<h1 class="font3">경로 설정</h1>
+		<h1 class="font3">실행 설정</h1>
 		<pre class="font4 black">
--binary zip 압축해제해서 respositroy 폴더 생성
--conf폴더의 setting.xml열어서 55번째줄 <localRepository>C:\spring\apache-maven-3.8.5\repository</localRepository> 추가
+-Web - CSS,HTML,JSP - utf-8
+-server - runtime Environment - 있던거 remove - add - tomcat 8.5추가 - 경로추가
+-preferences - user settings - C:\spring\apache-maven-3.8.5\conf - settings 로 변경
 		</pre>
 	</div>
 </body>

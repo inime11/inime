@@ -20,7 +20,23 @@ public class PageController {
 		return "settingPage/fileDown";
 	}
 	@RequestMapping(value = "/pathSet.do")
-	public String springTool() {
+	public String pathSet() {
+		return "settingPage/pathSet";
+	}
+	@RequestMapping(value = "/fileSet.do")
+	public String fileSet() {
 		return "settingPage/fileSet";
+	}
+	@RequestMapping(value = "/workspaceSet.do")
+	public String workspaceSet() {
+		return "settingPage/workspaceSet";
+	}
+	@RequestMapping(value = "/runSet.do")
+	public String runSet() {
+		return "settingPage/runSet";
+	}
+	@RequestMapping(value = "/projectSet.do")
+	public String projectSet() {
+		return "settingPage/projectSet";
 	}
 }

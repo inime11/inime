@@ -43,7 +43,7 @@
 				<li><a href="/fileDown.do" class="nonDeco">파일 다운로드</a>
 				<li><a href="/pathSet.do" class="nonDeco">경로 설정</a>
 				<li><a href="/fileSet.do" class="nonDeco">파일 설정</a>
-				<li><a href="/workspace.do" class="nonDeco">워크스페이스 설정</a>
+				<li><a href="/workspaceSet.do" class="nonDeco">워크스페이스 설정</a>
 				<li><a href="/runSet.do" class="nonDeco">실행 및 설정</a>
 				<li><a href="/projectSet.do" class="nonDeco">프로젝트 별 설정</a>
 			</ul>
