@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.content-wrap{
+	position: absolute;
+	top: 0px;
+	left: 250px;
+}
+
+.nonDeco{
+	list-style: none;
+	padding-left: 0;
+}
