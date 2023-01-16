@@ -4,12 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>메인페이지</title>
+<title>글 쓰기</title>
 </head>
 <body>
-	<h1>메인페이지</h1>
-	<h2><a href="/settingPage.do">세팅</a></h2>
-	<h2><a href="/skillPage.do">기술</a></h2>
-	냠냠
+
 </body>
 </html>
