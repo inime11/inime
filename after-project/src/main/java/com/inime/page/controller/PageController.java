@@ -39,4 +39,32 @@ public class PageController {
 	public String projectSet() {
 		return "settingPage/projectSet";
 	}
+	@RequestMapping(value = "/skillPage.do")
+	public String skillPage() {
+		return "skillPage/skillPage";
+	}
+	@RequestMapping(value = "/oracleDB.do")
+	public String oracleDB() {
+		return "skillPage/oracleDB";
+	}
+	@RequestMapping(value = "createBoard.do")
+	public String createBoard() {
+		return "skillPage/createBoard";
+	}
+	@RequestMapping(value = "writeBoard.do")
+	public String writeBoard() {
+		return "skillPage/writeBoard";
+	}
+	@RequestMapping(value = "readBoard.do")
+	public String readBoard() {
+		return "skillPage/readBoard";
+	}
+	@RequestMapping(value = "deleteBoard.do")
+	public String deleteBoard() {
+		return "skillPage/deleteBoard";
+	}
+	@RequestMapping(value = "modifyBoard.do")
+	public String modifyBoard() {
+		return "skillPage/modifyBoard";
+	}
 }

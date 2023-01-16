@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>메인페이지</title>
+<title>기술 메인 페이지</title>
 </head>
 <body>
-	<h1>메인페이지</h1>
-	<h2><a href="/settingPage.do">세팅</a></h2>
-	<h2><a href="/skillPage.do">기술</a></h2>
+<h1>기술 페이지</h1>
+<h2><a href="oracleDB.do">오라클 DB</a></h2>
+<h2><a href="createBoard.do">게시판 만들기</a></h2>
 </body>
 </html>
