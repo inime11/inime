@@ -7,34 +7,31 @@
 <title>Insert title here</title>
 <style type="text/css">
 	body{
-		width: 200px;
+		width: 100%;
 		height: 100px;
 	}
 	#mainPage{
 		position: relative;
 		display: block;
 		background: aqua;
-		width: 200px;
+		width: 100px;
 		height: 100px;
-	}
-	#mainPage > h3{
-		position: absolute;
-	}
-	.center > a{
-		display: table-cell;
-		width: 100%;
-		height: 100%;
+		margin-top: 0;
+		margin-left: 0;
+		line-height: 100px;
 		text-align: center;
-		vertical-align: middle;
-		margin: 0;
+		cursor: pointer;
 	}
+	
 </style>
+<link href="css/main.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/font.css" />
 <link rel="stylesheet" href="css/setting.css" />
+
 </head>
 <body>
-	<div id="mainPage">
-		<h3 class="center"><a href="/">메인</a></h3>
-	</div>
+<header id="header">
+	<div id="mainPage" onclick="location.href='/'">MAIN</div>
+</header>
 </body>
 </html>

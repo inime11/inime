@@ -67,4 +67,8 @@ public class PageController {
 	public String modifyBoard() {
 		return "skillPage/modifyBoard";
 	}
+	@RequestMapping(value = "unionPage.do")
+	public String unionPage() {
+		return "unionPage/unionMainPage";
+	}
 }

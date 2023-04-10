@@ -10,5 +10,6 @@
 	<h1>메인페이지</h1>
 	<h2><a href="/settingPage.do">세팅</a></h2>
 	<h2><a href="/skillPage.do">기술</a></h2>
+	<h2><a href="/unionPage.do">유니온</a></h2>
 </body>
 </html>
