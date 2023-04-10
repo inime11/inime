@@ -7,8 +7,11 @@
 <title>오라클 DB</title>
 </head>
 <body>
-<h1>오라클 DB</h1>
-<p>오라클 설치 후</p>
+<%@ include file="/WEB-INF/views/header/header.jsp" %>
+<div class="container">
+	<div>
+	<h1>오라클 DB</h1>
+	<p>오라클 설치 후</p>
 <pre>
 Oracle SQL Developer에서 admin,
 CREATE USER afterworkspace IDENTIFIED BY 1234;	//유저 만들기
@@ -38,5 +41,7 @@ DB작업을 수행하는 객체
 		&ltbeans:constructor-arg ref="sqlSession"/&gt
 	&lt/beans:bean&gt
 </pre>
+</div>
+</div>
 </body>
 </html>

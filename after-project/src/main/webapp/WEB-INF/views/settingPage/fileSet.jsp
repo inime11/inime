@@ -9,7 +9,7 @@
 <body>
 <%@ include file="/WEB-INF/views/header/header.jsp" %>
 <%@ include file="/WEB-INF/views/header/leftMenu.jsp" %>
-	<div class="content-wrap">
+	<div class="container">
 	<h1 class="font3">파일 세팅</h1>
 		<pre class="font4 black">
 - C드라이브 program Files - Java - jre - bin - javaw.exe 찾기

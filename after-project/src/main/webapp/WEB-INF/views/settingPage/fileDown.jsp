@@ -11,7 +11,7 @@
 <body>
 		<%@ include file="/WEB-INF/views/header/header.jsp" %>
 		<%@ include file="/WEB-INF/views/header/leftMenu.jsp" %>
-	<div class="content-wrap">
+	<div class="container">
 		<h1 class="font3">파일 다운로드</h1>
 		<p class="font4 black"><a href="https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.zip" class="nonDeco">apache maven</a></p>
 		
