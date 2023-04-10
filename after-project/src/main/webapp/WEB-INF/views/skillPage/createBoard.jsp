@@ -7,9 +7,12 @@
 <title>게시판 만들기</title>
 </head>
 <body>
-<h1><a href="writeBoard">글 쓰기</a></h1>
-<h1><a href="readBoard">글 읽기</a></h1>
-<h1><a href="deleteBoard">글 삭제</a></h1>
-<h1><a href="modifyBoard">글 수정</a></h1>
+<%@ include file="/WEB-INF/views/header/header.jsp" %>
+<div class="container">
+	<h1><a href="writeBoard">글 쓰기</a></h1>
+	<h1><a href="readBoard">글 읽기</a></h1>
+	<h1><a href="deleteBoard">글 삭제</a></h1>
+	<h1><a href="modifyBoard">글 수정</a></h1>
+</div>
 </body>
 </html>

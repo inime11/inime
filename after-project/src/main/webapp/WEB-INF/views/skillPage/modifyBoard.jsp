@@ -7,6 +7,9 @@
 <title>글 수정</title>
 </head>
 <body>
+<%@ include file="/WEB-INF/views/header/header.jsp" %>
+<div class="container">
 
+</div>
 </body>
 </html>

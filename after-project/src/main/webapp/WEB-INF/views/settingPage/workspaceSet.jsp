@@ -9,7 +9,7 @@
 <body>
 <%@ include file="/WEB-INF/views/header/header.jsp" %>
 <%@ include file="/WEB-INF/views/header/leftMenu.jsp" %>
-	<div class="content-wrap">
+	<div class="container">
 		<h1 class="font3">경로 설정</h1>
 		<pre class="font4 black">
 -workspace 만들고 sts-3.9.13 Release 폴더에서 sts.exe 실행

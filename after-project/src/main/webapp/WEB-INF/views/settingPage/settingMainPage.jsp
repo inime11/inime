@@ -9,7 +9,7 @@
 <body>
 <%@ include file="/WEB-INF/views/header/header.jsp" %>
 <%@ include file="/WEB-INF/views/header/leftMenu.jsp" %>
-<div class="content-wrap">
+<div class="container">
 	<p class="font3">세팅 순서</p>
 	<p class="font4">1. 설치 파일 </p>
 	<p class="font4">2. 다운 받은 파일 압축 해제 및 경로</p>

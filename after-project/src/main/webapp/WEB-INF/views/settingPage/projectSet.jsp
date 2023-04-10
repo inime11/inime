@@ -9,7 +9,7 @@
 <body>
 <%@ include file="/WEB-INF/views/header/header.jsp" %>
 <%@ include file="/WEB-INF/views/header/leftMenu.jsp" %>
-	<div class="content-wrap">
+	<div class="container">
 		<h1 class="font3">프로젝트마다 설정해줄것</h1>
 		<pre class="font4 black">
 프로젝트 만들때 spring legacy project 선택.
