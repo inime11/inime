@@ -13,7 +13,11 @@ public class SkillService {
 
 	public int insertBoard(Board b) {
 		int result = dao.insertBoard(b);
-		return 0;
+		if(result > 0) {
+			return result;
+		}else {
+			return -1;
+		}
 	}
 
 }

@@ -6,6 +6,6 @@
 		<setting name="jdbcTypeForNull" value="NULL"/>
 	</settings>
 	<typeAliases>
-		
+		<typeAlias type="com.inime.skill.vo.Board" alias="b"/>
 	</typeAliases>
 </configuration>
