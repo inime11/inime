@@ -13,8 +13,8 @@ public class SkillController {
 	private SkillService service;
 	
 	@RequestMapping("/insertBoard.do")
-	public String boardCreate(Board b) {
+	public String insertBoard(Board b) {
 		int result = service.insertBoard(b);
-		return "";
+			return "skillPage/writeBoard";
 	}
 }

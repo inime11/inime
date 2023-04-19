@@ -45,6 +45,7 @@
 	
 	<context:component-scan base-package="com.inime.myapp" />
 	<context:component-scan base-package="com.inime.page" />
+	<context:component-scan base-package="com.inime.skill" />
 	
 	
 	

@@ -12,8 +12,8 @@ public class SkillDao {
 	private SqlSessionTemplate sqlSession;
 
 	public int insertBoard(Board b) {
-		
-		return 0;
+		int result = sqlSession.insert("board.insertBoard", b);
+		return result;
 	}
 
 }
