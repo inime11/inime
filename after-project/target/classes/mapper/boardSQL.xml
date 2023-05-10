@@ -5,4 +5,21 @@
 		insert into board_tbl
 		values(board_seq.nextval, #{boardTitle}, #{boardContent})
 	</insert>
+	
+	<select id="readBoardList" resultType="b">
+		select
+			board_no as boardNo,
+			board_title as boardTitle,
+			board_content as boardContent
+		from board_tbl
+	</select>
+	
+	<select id="readOneBoard" parameterType="int" resultType="b">
+		select
+			board_no as boardNo,
+			board_title as boardTitle,
+			board_content as boardContent
+		from board_tbl
+		where board_no = #{boardNo}
+	</select>
 </mapper>
