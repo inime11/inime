@@ -1,5 +1,7 @@
 package com.inime.skill.service;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +20,16 @@ public class SkillService {
 		}else {
 			return -1;
 		}
+	}
+
+	public ArrayList<Board> readBoardList() {
+		ArrayList<Board> list = dao.readBoardList();
+		return list;
+	}
+
+	public Board readOneBoard(int boardNo) {
+		Board b = dao.readOneBoard(boardNo);
+		return b;
 	}
 
 }
