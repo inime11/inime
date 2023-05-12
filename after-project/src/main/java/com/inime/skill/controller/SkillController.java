@@ -37,6 +37,55 @@ public class SkillController {
 	public String readOneBoard(int boardNo, Model model) {
 		Board b = service.readOneBoard(boardNo);
 		model.addAttribute("b", b);
-		return "board/boardView";
+		return "skillPage/readOneBoard";
+	}
+	
+	@RequestMapping("/deleteBoard.do")
+	public String deleteBoard(Model model) {
+		ArrayList<Board> list = service.readBoardList();
+		model.addAttribute("list", list);
+		return "skillPage/deleteBoard";
+	}
+	
+	@RequestMapping("/deleteOneBoard.do")
+	public String deleteOneBoard(int boardNo, RedirectAttributes redAtt, Model model) {
+		int result = service.deleteOneBoard(boardNo);
+		ArrayList<Board> list = service.readBoardList();
+		if(list.isEmpty()) {
+			redAtt.addFlashAttribute("alertMessage", "리스트가 없습니다");
+			return "skillPage/createBoard.jsp";
+		}
+		model.addAttribute("list", list);
+		return "skillPage/deleteBoard";
+	}
+	
+	@RequestMapping(value = "modifyBoard.do")
+	public String modifyBoard(Model model, RedirectAttributes redAtt) {
+		ArrayList<Board> list = service.readBoardList();
+		if(list.isEmpty()) {
+			redAtt.addFlashAttribute("alertMessage", "리스트가 없습니다");
+			return "skillPage/createBoard.jsp";
+		}
+		model.addAttribute("list", list);
+		return "skillPage/modifyBoard";
+	}
+	
+	@RequestMapping(value = "modifyBoardFrm.do")
+	public String modifyBoardFrm(Model model, int boardNo) {
+		Board b = service.readOneBoard(boardNo);
+		model.addAttribute("b", b);
+		return "skillPage/modifyBoardFrm";
+	}
+	
+	@RequestMapping(value = "modifyOneBoard.do")
+	public String modifyBoard(int boardNo, RedirectAttributes redAtt, Model model) {
+		int result = service.modifyOneBoard(boardNo);
+		ArrayList<Board> list = service.readBoardList();
+		if(list.isEmpty()) {
+			redAtt.addFlashAttribute("alertMessage", "리스트가 없습니다");
+			return "skillPage/createBoard.jsp";
+		}
+		model.addAttribute("list", list);
+		return "skillPage/modifyBoard";
 	}
 }

@@ -32,4 +32,14 @@ public class SkillService {
 		return b;
 	}
 
+	public int deleteOneBoard(int boardNo) {
+		int result = dao.deleteOneBoard(boardNo);
+		return result;
+	}
+
+	public int modifyOneBoard(int boardNo) {
+		int result = dao.modifyOneBoard(boardNo);
+		return result;
+	}
+
 }

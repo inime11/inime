@@ -22,4 +22,14 @@
 		from board_tbl
 		where board_no = #{boardNo}
 	</select>
+	
+	<delete id="deleteOneBoard" parameterType="int">
+		delete from board_tbl where board_no = #{boardNo}
+	</delete>
+	
+	<update id="modifyOneBoard" parameterType="int">
+		update board_tbl
+		set board_title = #{boardTitle}, board_content = #{boardContent}
+		where board_no = #{boardNo}
+	</update>
 </mapper>
