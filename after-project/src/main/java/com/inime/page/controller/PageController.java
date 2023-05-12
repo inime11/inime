@@ -59,14 +59,6 @@ public class PageController {
 	public String readBoard() {
 		return "skillPage/readBoard";
 	}
-	@RequestMapping(value = "deleteBoard.do")
-	public String deleteBoard() {
-		return "skillPage/deleteBoard";
-	}
-	@RequestMapping(value = "modifyBoard.do")
-	public String modifyBoard() {
-		return "skillPage/modifyBoard";
-	}
 	
 	
 	@RequestMapping(value = "unionPage.do")

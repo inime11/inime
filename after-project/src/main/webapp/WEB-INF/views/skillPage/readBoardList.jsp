@@ -17,7 +17,7 @@
 		</tr>
 		<c:forEach items="${list }" var="b" varStatus="i">
 		<tr>
-		<td><a href="/readOneBoard.do?BoardNo=${b.boardNo }">${b.boardNo }</a></td>
+		<td><a href="/readOneBoard.do?boardNo=${b.boardNo }">${b.boardNo }</a></td>
 		<td>${b.boardTitle }</td>
 		<td>${b.boardContent }</td>
 		</tr>

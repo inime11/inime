@@ -21,13 +21,22 @@ public class SkillDao {
 
 	public ArrayList<Board> readBoardList() {
 		List list = sqlSession.selectList("board.readBoardList");
-		System.out.println(list);
 		return (ArrayList<Board>)list;
 	}
 
 	public Board readOneBoard(int boardNo) {
 		Board b = sqlSession.selectOne("board.readOneBoard", boardNo);
 		return b;
+	}
+
+	public int deleteOneBoard(int boardNo) {
+		int result = sqlSession.delete("board.deleteOneBoard", boardNo);
+		return result;
+	}
+
+	public int modifyOneBoard(int boardNo) {
+		int result = sqlSession.update("board.modifyOneBoard", boardNo);
+		return result;
 	}
 
 }
