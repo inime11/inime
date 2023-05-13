@@ -11,6 +11,7 @@
 	<h1>기술 페이지</h1>
 	<h2><a href="oracleDB.do">오라클 DB</a></h2>
 	<h2><a href="createBoard.do">게시판 만들기</a></h2>
+	<h2><a href="loginMain.do">회원가입 / 로그인</a></h2>
 </div>
 </body>
 </html>

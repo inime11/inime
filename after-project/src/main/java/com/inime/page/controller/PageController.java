@@ -60,6 +60,15 @@ public class PageController {
 		return "skillPage/readBoard";
 	}
 	
+	@RequestMapping(value = "loginMain.do")
+	public String login() {
+		return "skillPage/loginMain";
+	}
+	
+	@RequestMapping(value = "createMemberFrm.do")
+	public String createMemeberFrm() {
+		return "skillPage/createMemberFrm";
+	}
 	
 	@RequestMapping(value = "unionPage.do")
 	public String unionPage() {

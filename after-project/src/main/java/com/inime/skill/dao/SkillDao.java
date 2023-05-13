@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.inime.skill.vo.Board;
+import com.inime.skill.vo.Member;
 
 @Repository
 public class SkillDao {
@@ -34,8 +35,23 @@ public class SkillDao {
 		return result;
 	}
 
-	public int modifyOneBoard(int boardNo) {
-		int result = sqlSession.update("board.modifyOneBoard", boardNo);
+	public int modifyOneBoard(Board b) {
+		int result = sqlSession.update("board.modifyOneBoard", b);
+		return result;
+	}
+
+	public int createMember(Member m) {
+		int result = sqlSession.insert("member.createMember", m);
+		return result;
+	}
+
+	public Member selectOneMember(Member m) {
+		Member member = sqlSession.selectOne("member.login", m);
+		return member;
+	}
+
+	public int updatePW(Member m) {
+		int result = sqlSession.update("member.updatePW", m);
 		return result;
 	}
 

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.inime.skill.dao.SkillDao;
 import com.inime.skill.vo.Board;
+import com.inime.skill.vo.Member;
 
 @Service
 public class SkillService {
@@ -37,9 +38,21 @@ public class SkillService {
 		return result;
 	}
 
-	public int modifyOneBoard(int boardNo) {
-		int result = dao.modifyOneBoard(boardNo);
+	public int modifyOneBoard(Board b) {
+		int result = dao.modifyOneBoard(b);
 		return result;
+	}
+
+	public int createMember(Member m) {
+		return dao.createMember(m);
+	}
+
+	public Member selectOneMember(Member m) {
+		return dao.selectOneMember(m);
+	}
+
+	public int updatePW(Member m) {
+		return dao.updatePW(m);
 	}
 
 }
